@@ -6,5 +6,5 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface TextRepository extends JpaRepository<TextEntity, Long> {
-    // aquí puedes añadir queries custom si luego hace falta
+    //queries custom
 }

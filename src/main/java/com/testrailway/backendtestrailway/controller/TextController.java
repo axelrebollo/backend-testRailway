@@ -23,15 +23,8 @@ public class TextController {
         return ResponseEntity.status(201).body(saved);
     }
 
-    // Opcional: endpoint para listar
     @GetMapping
     public ResponseEntity<?> listAll() {
-        return ResponseEntity.ok(serviceListAll());
-    }
-
-    // Si quieres mantener simple, implementa un listAll en service
-    private Object serviceListAll() {
-        // placeholder: añadir en service un método listAll() que llame repo.findAll()
-        return null;
+        return ResponseEntity.ok(service.listAll());
     }
 }
